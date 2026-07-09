@@ -38,8 +38,8 @@ export default function Body2() {
         <motion.div variants={fadeIn} className="flex flex-col mx-6 lg:mr-4 md:mr-4 sm:mr-4">
           <div className="relative w-full max-w-md mx-auto">
             <div className="bg-gray-300 w-full min-h-[250px] flex flex-col py-3 pl-4 rounded-2xl opacity-65">
-              <div className="flex pt-4 text-3xl gap-4">
-                <span className="border-1 w-fit p-3 rounded-lg">
+                 <div className="flex flex-wrap pt-4 text-3xl gap-4">
+                  <span className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-tailwindcss-original"></i>
                 </span>
                 <span className="border-1 w-fit p-3 rounded-lg">
