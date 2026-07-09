@@ -88,11 +88,13 @@ export default function Body2() {
             {/* 1st card */}
             <motion.div variants={fadeIn} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl shadow-2xl overflow-hidden border-1 border-gray-300 rounded-lg hover:scale-105 transition-transform duration-300">
               <div className="bg-transparent">
-                <img src="card1.png" alt="LMC-M project" />
-                <div className="flex flex-row justify-between">
-                  <h1 className="pt-2 pl-3 text-white">LMC-M</h1>
-                  <div className="bg-white rounded-full mt-2">
-                    <a href="#">
+                <img src="card1.png" alt="Minders project" />
+                <div className="flex flex-row justify-between p-2">
+                  <div className="flex items-center">
+                    <h1 className="pt-2 pl-3 text-white">L-MCM</h1>
+                  </div>
+                  <div className="bg-white rounded-full">
+                    <a href="https://github.com/ypoudel3/LMC-main">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-11 h-11 p-2"
@@ -106,6 +108,7 @@ export default function Body2() {
                 </div>
               </div>
             </motion.div>
+          
 
             {/* 2nd card */}
             <motion.div variants={fadeIn} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl shadow-2xl overflow-hidden border-1 border-gray-300 rounded-lg hover:scale-105 transition-transform duration-300">
@@ -116,7 +119,7 @@ export default function Body2() {
                     <h1 className="pt-2 pl-3 text-white">Minders</h1>
                   </div>
                   <div className="bg-white rounded-full">
-                    <a href="#">
+                    <a href="https://github.com/ypoudel3/minders">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-11 h-11 p-2"
@@ -140,7 +143,7 @@ export default function Body2() {
                     <h1 className="pt-2 pl-3 text-white">Star Wars</h1>
                   </div>
                   <div className="bg-white rounded-full">
-                    <a href="#">
+                    <a href="https://github.com/ypoudel3/sw">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-11 h-11 p-2"
@@ -164,7 +167,7 @@ export default function Body2() {
                     <h1 className="pt-2 pl-3 text-white">Drape</h1>
                   </div>
                   <div className="bg-white rounded-full">
-                    <a href="#">
+                    <a href="https://github.com/ypoudel3/final_project">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-11 h-11 p-2"
