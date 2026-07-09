@@ -8,7 +8,7 @@ export default function Body2() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="grid grid-cols-1 md:grid-cols-2 gap-16 bg-amber-950 py-10 pt-20"
       >
         <motion.div variants={fadeIn} className="flex flex-col mx-6 lg:mr-4 md:mr-4 sm:mr-4">
@@ -80,7 +80,7 @@ export default function Body2() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="flex flex-col  pl-4 w-full md:col-span-2 bg-amber-950"
         >
           <motion.h1 variants={fadeIn} className="text-center text-3xl font-bold text-white">Projects</motion.h1>
