@@ -1,6 +1,7 @@
 import "../src/index.css";
 import logo from '../src/assets/logo.svg';
-
+import { motion } from "framer-motion";
+import { fadeUp, fadeLeft, fadeRight, staggerContainer, fadeIn } from "./Animation.js";
 export default function Navbar() {
   return (
     <>
@@ -25,9 +26,17 @@ export default function Navbar() {
           A Portfolio
         </div>
       </div>
+      <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.5 }}
+      className="relative"
+      >
 
-      <div className="flex flex-row bg-[#fdebd2]">
+      <div className=" bg-[#fdebd2]">
         
+      <motion.div variants={fadeUp} className="flex flex-row">
       <ul className=" flex flex-row gap-4 mt-16 justify-center ml-6 text-amber-950">
           <a href=""><li>About Me</li></a>
           <a href=""><li>Work</li></a>
@@ -44,7 +53,9 @@ export default function Navbar() {
           Get in Touch</a></button>
 
         </div>
+        </motion.div>
       </div>
+       </motion.div>
     </>
   );
 }
