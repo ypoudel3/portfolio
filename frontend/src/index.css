@@ -37,7 +37,7 @@
 .animate-typing2 {
   display: inline-block;
   white-space: nowrap;
-  overflow: hidden;              /* ensures hidden before animation */
+  overflow: hidden;              
   clip-path: inset(0 100% 0 0);  /* hide text at start */
 }
 .animate-typing1 {
@@ -46,6 +46,6 @@
 
 .animate-typing2 {
   animation: typingSmooth 2s linear forwards;
-  animation-delay: 2s; /* waits for Yunisha */
+  animation-delay: 2s; 
 }
 

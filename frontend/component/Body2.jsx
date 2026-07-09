@@ -181,6 +181,30 @@ export default function Body2() {
                 </div>
               </div>
             </motion.div>
+           
+            {/* 5th card */}
+              <motion.div variants={fadeIn} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl shadow-2xl overflow-hidden border-1 border-gray-300 rounded-lg hover:scale-105 transition-transform duration-300">
+              <div className="bg-transparent">
+                <img src="card5.png" alt="Data" />
+                <div className="flex flex-row justify-between p-2">
+                  <div className="flex items-center">
+                    <h1 className="pt-2 pl-3 text-white"> Healthcare Data Analysis & Classification</h1>
+                  </div>
+                  <div className="bg-white rounded-full">
+                    <a href="https://github.com/ypoudel3/data_final">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11 p-2"
+                        viewBox="0 -960 960 960"
+                        fill="#592300"
+                      >
+                        <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>
