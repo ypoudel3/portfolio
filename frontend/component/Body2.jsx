@@ -161,7 +161,7 @@ export default function Body2() {
             {/* 4th card */}
             <motion.div variants={fadeIn} className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl shadow-2xl overflow-hidden border-1 border-gray-300 rounded-lg hover:scale-105 transition-transform duration-300">
               <div className="bg-transparent">
-                <img src="card4.png" alt="Drape project" className="w-full h-48 object-cover" />
+                <img src="card4.png" alt="Drape project" />
                 <div className="flex flex-row justify-between p-2">
                   <div className="flex items-center">
                     <h1 className="pt-2 pl-3 text-white">Drape</h1>
