@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Monsieur+La+Doulaise&family=Ephesis&family=Alex+Brush&family=Allura&family=Sacramento&family=Dancing+Script&family=Parisienne&family=Satisfy&family=Mrs+Saint+Delafield&family=Whisper&family=Klee+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Classic cursive fonts */
+  --font-alex: "Alex Brush", cursive;
+  --font-allura: "Allura", cursive;
+  --font-sacramento: "Sacramento", cursive;
+  --font-dancing: "Dancing Script", cursive;
+  --font-parisienne: "Parisienne", cursive;
+  --font-satisfy: "Satisfy", cursive;
+
+  /* Display / modern fonts */
+  --font-display: 'Monsieur La Doulaise', cursive;
+  --font-ballet: 'Ballet', sans-serif;
+
+  /* Elegant cursive for headings */
+  --font-greatvibes: 'Great Vibes', cursive;
+
+  /* Decorative calligraphy */
+  --font-herr: 'Herr Von Muellerhoff', cursive;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-ephesis: 'Ephesis', cursive;
+  --font-sd: "Mrs Saint Delafield", cursive;
+  --font-whisper: "Whisper", cursive;
+  --font-klee: "Klee One", cursive;
+
+
+}
+
+@keyframes typingSmooth {
+  from { clip-path: inset(0 100% 0 0); }  /* fully hidden */
+  to { clip-path: inset(0 0 0 0); }       /* fully revealed */
+}
+
+.animate-typing1,
+.animate-typing2 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;              /* ensures hidden before animation */
+  clip-path: inset(0 100% 0 0);  /* hide text at start */
+}
+.animate-typing1 {
+  animation: typingSmooth 2s linear forwards;
+}
+
+.animate-typing2 {
+  animation: typingSmooth 2s linear forwards;
+  animation-delay: 2s; /* waits for Yunisha */
+}
