@@ -80,7 +80,7 @@ export default function Body2() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.4 }}
           className="flex flex-col  pl-4 w-full md:col-span-2 bg-amber-950"
         >
           <motion.h1 variants={fadeIn} className="text-center text-3xl font-bold text-white">Projects</motion.h1>
