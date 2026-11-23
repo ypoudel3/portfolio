@@ -39,34 +39,40 @@ export default function Body2() {
           <div className="relative w-full max-w-md mx-auto">
             <div className="bg-gray-300 w-full min-h-[250px] flex flex-col py-3 pl-4 rounded-2xl opacity-65">
                  <div className="flex flex-wrap pt-4 text-3xl gap-4">
-                  <span className="border-1 w-fit p-3 rounded-lg">
+                  <span title="Tailwind CSS" aria-label="Tailwind CSS" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-tailwindcss-original"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="React" aria-label="React" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-react-original"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="Node.js" aria-label="Node.js" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-nodejs-plain"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="Express" aria-label="Express" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-express-original"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="MongoDB" aria-label="MongoDB" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-mongodb-plain"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="Python" aria-label="Python" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-python-plain"></i>
                 </span>
               </div>
               <div className="flex pt-4 text-3xl gap-4">
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="PHP" aria-label="PHP" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-php-plain"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="HTML5" aria-label="HTML5" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-html5-plain"></i>
                 </span>
-                <span className="border-1 w-fit p-3 rounded-lg">
+                <span title="JavaScript" aria-label="JavaScript" className="border-1 w-fit p-3 rounded-lg">
                   <i className="devicon-javascript-plain"></i>
+                </span>
+                <span title="Next.js" aria-label="Next.js" className="border-1 w-fit p-3 rounded-lg">
+                  <i className="devicon-nextjs-plain"></i>
+                </span>
+                <span title="TypeScript" aria-label="TypeScript" className="border-1 w-fit p-3 rounded-lg">
+                  <i className="devicon-typescript-plain"></i>
                 </span>
               </div>
             </div>
@@ -76,12 +82,26 @@ export default function Body2() {
           </div>
         </motion.div>
 
+        <motion.div variants={fadeIn} className="flex flex-col mx-6 md:col-span-2">
+          <div className="relative w-full max-w-2xl mx-auto">
+            <div className="bg-gray-300 w-full min-h-[150px] flex flex-col justify-center py-8 px-6 rounded-2xl opacity-65">
+              <h2 className="font-bold text-xl">Front-End Developer Intern</h2>
+              <p className="mt-1">Road of Digital</p>
+              <p className="mt-2 text-gray-600">July 2026 – October 2026</p>
+            </div>
+            <div className="z-10 absolute -top-4 left-0 bg-amber-300 rounded-2xl">
+              <h1 className="font-bold text-2xl px-4">Experience</h1>
+            </div>
+          </div>
+        </motion.div>
+
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="flex flex-col  pl-4 w-full md:col-span-2 bg-amber-950"
+          id="projects"
+          className="flex flex-col pl-4 w-full md:col-span-2 bg-amber-950 scroll-mt-6"
         >
           <motion.h1 variants={fadeIn} className="text-center text-3xl font-bold text-white">Projects</motion.h1>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 p-10 gap-10">
@@ -190,7 +210,7 @@ export default function Body2() {
                   <div className="flex items-center">
                     <h1 className="pt-2 pl-3 text-white"> Healthcare Data Analysis & Classification</h1>
                   </div>
-                  <div className="bg-white rounded-full">
+                  <div className="bg-white rounded-full ">
                     <a href="https://github.com/ypoudel3/data_final">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

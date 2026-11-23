@@ -42,8 +42,8 @@ export default function Navbar() {
            className="flex flex-row items-center justify-between px-6 py-4 md:py-8" >
             {/* Nav links - desktop */}
             <ul className="hidden md:flex flex-row gap-4 text-amber-950">
-              <a href=""><li>About Me</li></a>
-              <a href=""><li>Work</li></a>
+              <a href="#about" className="scroll-smooth"><li>About Me</li></a>
+              <a href="#projects" className="scroll-smooth"><li>Work</li></a>
             </ul>
 
             {/* Logo */}
@@ -81,8 +81,8 @@ export default function Navbar() {
                 className="md:hidden overflow-hidden"
               >
                 <ul className="flex flex-col items-center gap-4 py-6 text-amber-950">
-                  <a href="" onClick={() => setMenuOpen(false)}><li>About Me</li></a>
-                  <a href="" onClick={() => setMenuOpen(false)}><li>Work</li></a>
+                  <a href="#about" className="scroll-smooth" onClick={() => setMenuOpen(false)}><li>About Me</li></a>
+                  <a href="#projects" className="scroll-smooth" onClick={() => setMenuOpen(false)}><li>Work</li></a>
                   <button className="bg-amber-950 text-white p-2 px-4 rounded-4xl text-[0.9rem] hover:scale-95">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yunishapoudel6@gmail.com">
                       Get in Touch
