@@ -53,11 +53,14 @@ export default function Navbar() {
 
             {/* Get in touch - desktop */}
             <div className="hidden md:block">
-              <button className="bg-amber-950 text-white p-2 px-3 rounded-4xl text-[0.9rem] hover:scale-95">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yunishapoudel6@gmail.com">
-                  Get in Touch
-                </a>
-              </button>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=yunishapoudel6@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block bg-amber-950 text-white p-2 px-3 rounded-4xl text-[0.9rem] hover:scale-95"
+              >
+                Get in Touch
+              </a>
             </div>
 
             {/* Hamburger - mobile */}
@@ -83,11 +86,15 @@ export default function Navbar() {
                 <ul className="flex flex-col items-center gap-4 py-6 text-amber-950">
                   <a href="#about" className="scroll-smooth" onClick={() => setMenuOpen(false)}><li>About Me</li></a>
                   <a href="#projects" className="scroll-smooth" onClick={() => setMenuOpen(false)}><li>Work</li></a>
-                  <button className="bg-amber-950 text-white p-2 px-4 rounded-4xl text-[0.9rem] hover:scale-95">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yunishapoudel6@gmail.com">
-                      Get in Touch
-                    </a>
-                  </button>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=yunishapoudel6@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-amber-950 text-white p-2 px-4 rounded-4xl text-[0.9rem] hover:scale-95"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Get in Touch
+                  </a>
                 </ul>
               </motion.div>
             )}
